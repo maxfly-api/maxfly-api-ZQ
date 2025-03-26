@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>【API中转站】DeepSeek API|ChatGPT API|免费API中转站|OpenAI API Key获取</title>
+    <meta name="description" content="麦克斯API中转站(MaxFlyHub)提供稳定高效的AI大模型API接口服务，支持OpenAI/ChatGPT/Claude/DeepSeek等API，免费试用，低成本高并发，适合开发者和企业使用的AI API平台。">
+    <meta name="keywords" content="API中转站,中转站API,大模型API,AI API,API平台,AI API接口,免费API,ChatGPT API,OpenAI API Key,Claude API,DeepSeek API,API接口,免费大模型API,GPT API,免费API接口">
+    <meta property="og:title" content="麦克斯API中转站 | 一站式AI大模型API接口服务平台">
+    <meta property="og:description" content="麦克斯API中转站提供稳定、低成本的OpenAI/ChatGPT/Claude/DeepSeek API接口服务，支持API Key获取、免费试用额度，高并发无限制，为开发者和企业提供专业AI API解决方案。">
+    <meta property="og:url" content="https://maxfly-api.github.io/maxfly-api-ZQ">
+    <meta property="twitter:title" content="麦克斯API中转站 | OpenAI/ChatGPT/Claude/DeepSeek API服务平台">
+    <meta property="twitter:description" content="麦克斯API中转站提供稳定、低成本的OpenAI/ChatGPT/Claude/DeepSeek API接口服务，支持API Key获取、免费试用额度，高并发无限制，为开发者和企业提供专业AI API解决方案。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charSet="utf-8" />
+    <meta http-equiv='content-language' content='zh-CN'>
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msvalidate.01" content="36CC1147BAC558447DA0D92095C7B6FA" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, var(--color-1), var(--color-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--color-1), var(--color-2));
+            z-index: -1;
+            opacity: 0.8;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            color: #007bff;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* New Section Styles */
+        .markdown-content {
+            padding: 40px;
+            background-color: #00A2E8;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .markdown-content h2 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .markdown-content p, .markdown-content li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #333;
+        }
+        .api-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .api-feature {
+            background: rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 48%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .price-tag {
+            background: #ff4d4d;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 767px) {
+            .container {
+                min-height: auto;
+                padding-top: 150px;
+                padding-bottom: 20px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            .markdown-content {
+                padding: 20px;
+            }
+            .markdown-content h2 {
+                font-size: 28px;
+            }
+            .markdown-content p, .markdown-content li {
+                font-size: 16px;
+            }
+            .markdown-content table {
+                display: block;
+                overflow-x: auto;
+                width: 100%;
+            }
+            .markdown-content th, .markdown-content td {
+                white-space: nowrap;
+            }
+            .arrow-down {
+                display: none;
+            }
+            .api-feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h1>麦克斯API中转站 - 专业AI API服务平台</h1>
+            <h2>免费体验OpenAI、ChatGPT、Claude、DeepSeek等顶级AI模型API</h2>
+            <h2>🔥 高并发 | ⚡ 低延迟 | 💯 稳定可靠 | 🌟 成本优化</h2>
+            <a href="https://maxflyhub.com" target="_blank" class="button">立即获取API密钥</a>
+            <h3>实时更新：<strong id="curdate"></strong></h3>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️ 查看更多API服务详情</div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content" id="more-content">
+
+        <blockquote>
+        <p>【2025最新】<strong>麦克斯API中转站</strong> — 为开发者和企业提供稳定、低成本的<strong>AI大模型API接口</strong>解决方案！</p>
+    </blockquote>
+    <p>我们是您值得信赖的<strong>AI API中转站</strong>，提供<strong>OpenAI/ChatGPT API</strong>、<strong>Claude API</strong>、<strong>DeepSeek API</strong>等多种大模型接口服务。</p>
+    <p>无论您是开发AI应用、构建智能产品还是进行AI研究，麦克斯API都能满足您的需求！<a href="https://maxflyhub.com" target="_blank">立即访问我们的官网</a>获取免费API密钥！</p>
+
+    <h2>为什么选择麦克斯API中转站？</h2>
+    <p><strong>麦克斯API</strong>是专为中国开发者和企业打造的AI API服务平台，相比直接使用官方API，我们提供更多本地化优势。</p>
+    <p>使用<strong>麦克斯API中心优势：</p>
+    <ul>
+        <li>✅ <strong>稳定可靠</strong>：多节点负载均衡，99.9%可用性保障，告别API请求失败</li>
+        <li>✅ <strong>成本优化</strong>：比官方API更低的调用成本，为您节省50%以上开支</li>
+        <li>✅ <strong>高并发支持</strong>：支持每秒数百次的API调用，满足大规模应用需求</li>
+        <li>✅ <strong>简易接入</strong>：完全兼容官方API接口，无需修改现有代码，即插即用</li>
+        <li>✅ <strong>全天候技术支持</strong>：专业技术团队7x24小时在线，解决您的问题</li>
+    </ul>
+
+    <h2>【2025年最新】我们提供的热门AI API服务</h2>
+    
+    <div class="api-features">
+        <div class="api-feature">
+            <h3>OpenAI API / ChatGPT API <span class="price-tag">热门</span></h3>
+            <p>支持GPT-3.5-Turbo、GPT-4、GPT-4o、GPT-4o-mini等全系列模型</p>
+            <p>兼容官方API格式，支持聊天补全、文本补全、嵌入等全部功能</p>
+            <a href="https://maxflyhub.com/" target="_blank">了解详情</a>
+        </div>
+        
+        <div class="api-feature">
+            <h3>Claude API <span class="price-tag">热门</span></h3>
+            <p>支持Claude Instant、Claude 2、Claude 3 Opus/Sonnet/Haiku全系列</p>
+            <p>超长上下文支持，适合文档分析和复杂任务处理</p>
+            <a href="https://maxflyhub.com/" target="_blank">了解详情</a>
+        </div>
+        
+        <div class="api-feature">
+            <h3>DeepSeek API <span class="price-tag">新品</span></h3>
+            <p>支持DeepSeek-7B、DeepSeek-67B等高性能开源模型</p>
+            <p>中英双语优化，代码能力出色，性价比极高</p>
+            <a href="https://maxflyhub.com/" target="_blank">获取DeepSeek API Key</a>
+        </div>
+        
+        <div class="api-feature">
+            <h3>免费API测试套餐 <span class="price-tag">限时</span></h3>
+            <p>注册即获5美元免费额度，可测试所有模型API</p>
+            <p>无需信用卡，简单注册即可开始使用</p>
+            <a href="https://maxflyhub.com/" target="_blank">立即注册体验</a>
+        </div>
+    </div>
+
+    <h2>麦克斯API中转站 VS 官方API：全方位对比</h2>
+    <table border="1">
+        <tr>
+            <th>对比项</th>
+            <th>官方API直连</th>
+            <th>麦克斯API中转服务</th>
+        </tr>
+        <tr>
+            <td><strong>访问稳定性</strong></td>
+            <td>国内访问不稳定，高峰期常断连</td>
+            <td>✅ 多节点负载均衡，稳定可靠，全天候可用</td>
+        </tr>
+        <tr>
+            <td><strong>调用成本</strong></td>
+            <td>按官方价格计费，需美元支付</td>
+            <td>✅ 比官方低50%以上，支持人民币付款</td>
+        </tr>
+        <tr>
+            <td><strong>并发限制</strong></td>
+            <td>严格限制，新用户每分钟仅3次</td>
+            <td>✅ 高并发支持，按需扩展，满足大规模应用</td>
+        </tr>
+        <tr>
+            <td><strong>接口兼容性</strong></td>
+            <td>原生接口</td>
+            <td>✅ 100%兼容官方接口，无需修改代码</td>
+        </tr>
+        <tr>
+            <td><strong>账号注册</strong></td>
+            <td>需国外手机号，注册繁琐</td>
+            <td>✅ 简单注册，中国手机号即可，3分钟内完成</td>
+        </tr>
+        <tr>
+            <td><strong>技术支持</strong></td>
+            <td>英文支持，响应慢</td>
+            <td>✅ 中文技术支持，响应迅速，专业解答</td>
+        </tr>
+        <tr>
+            <td><strong>计费方式</strong></td>
+            <td>预付费，余额不足自动停止</td>
+            <td>✅ 预付费和后付费可选，更灵活的计费方案</td>
+        </tr>
+    </table>
+
+    <p><strong>开发者选择：</strong>对于中国开发者和企业，麦克斯API中转站提供更稳定、更经济、更便捷的AI API服务体验。</p>程】如何使用麦克斯API中转站？</h2>
+    <ol>
+        <li><strong>第一步：</strong>访问<a href="https://maxflyhub.com" target="_blank">麦克斯API官网(MaxFlyHub.com)</a></li>
+        <li><strong>第二步：</strong>注册账号并登录（支持手机号、邮箱或微信登录）</li>
+        <li><strong>第三步：</strong>在控制台中创建API密钥（支持OpenAI/ChatGPT、Claude、DeepSeek等多种模型）</li>
+        <li><strong>第四步：</strong>充值账户或使用免费额度（新用户赠送5美元测试额度）</li>
+        <li><strong>第五步：</strong>在您的应用中集成API，使用我们提供的SDK或直接调用REST API</li>
+    </ol>
+
+    <h2>API调用示例代码</h2>
+    <pre><code>// OpenAI/ChatGPT API调用示例 (Node.js)
+const { Configuration, OpenAIApi } = require("openai");
+
+const configuration = new Configuration({
+  apiKey: "您的麦克斯API密钥",
+  basePath: "https://api.maxflyhub.com/v1", // 替换为麦克斯API端点
+});
+
+const openai = new OpenAIApi(configuration);
+
+async function main() {
+  const response = await openai.createChatCompletion({
+    model: "gpt-4o",
+    messages: [
+      {role: "system", content: "你是一个有用的助手。"},
+      {role: "user", content: "请简要介绍一下API中转站的作用"}
+    ],
+  });
+  
+  console.log(response.data.choices[0].message.content);
+}
+
+main();</code></pre>
+
+    <h2
+    <h3>1. 麦克斯API中转站安全吗？</h3>
+    <p>是的，我们采用企业级安全标准，所有API调用均通过HTTPS加密传输，不存储您的对话内容，确拥有完善的隐私保护政策，受到众多企业客户的信任。</p>
+
+    <h3>2. 如何获取OpenAI API Key或DeepSeek API Key？</h3>
+    <p>通过麦克斯API中转站，您无需直接从官方获取API密钥。只需在我们平台注册账号，即可创建兼容各大AI模型的API密钥，避开官方注册的各种限制和繁琐流程。</p>
+
+    <h3>3. API调用费用如何计算？</h3>
+    <p>我们采用与官方类似的按token计费方式，但价格更优惠。例如，GPT-4o的调用价格比官方低约40%，Claude API价格比官方低约50%。详细价格请参考我们的<a href="https://maxflyhub.com/" target="_blank">价格页面</a>。</p>
+
+    <h3>4. 支持哪些付款方式？</h3>
+    <p>我们支持支付宝、微信支付、银行需海外信用卡，为中国用户提供便利。企业客户还可申请对公账户付款和发票服务。</p>
+
+    <h3>5. 如何处理高并发API请求？</h3>
+    <p>麦克斯API采用分布式架构和智能负载均衡技术，可轻松应对高并发场景。标准套餐支持每秒10次调用，企业套餐可提供更高并发支持，满足大规模应用需求。</p>
+
+    <h2>加入麦克斯API，畅享AI开发新体验！</h2>
+    <p>无论您是个人开发者还是企业用户，<strong>麦克斯API中转站</strong>都能为您提供稳定、高效、经济的AI API服务。</p>
+
+    <p>如有任何问题，请联系我们的客服团队</p>
+
+
+    <hr>
+    </section>
+
+    <script>
+        const colors = [
+            ['#ff0080', '#7928ca'], 
+            ['#ff4d4d', '#f9cb28'], 
+            ['#7928ca', '#4c88e8'], 
+            ['#4c88e8', '#4FE2B1'], 
+            ['#ff0080', '#ff7f00']  
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--color-1', color1);
+        document.documentElement.style.setProperty('--color-2', color2);
+
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+        
+        document.getElementById('curdate').textContent = formatDate(new Date());
+        document.getElementById('update-time').textContent = formatDate(new Date()).replace(/\//g, '年').replace(/(\d+)$/, '$1日');
+        
+    </script>
+</body>
+</html>
